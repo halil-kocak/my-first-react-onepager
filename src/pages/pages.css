@@ -1,0 +1,110 @@
+:root {
+    --textColor:  #ffffffb6;
+    --primary: #99cdeb;
+    --light: #2695d1;
+    --dark: #000000c9;
+    --hooverEffect: #616ba2;
+    --shadow: rgb(174, 174, 174);
+
+    --primary-op-75: #99cdeb5d;
+    --hooverEffect-op-75: #535fa2b4;
+  
+    --font: 'Lato', sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    padding: 5px 5px;
+    margin: auto;
+
+    border-radius: 10px;
+
+    background: var(--dark);
+
+    box-shadow: var(--dark) 0px 14px 28px, 
+                var(--shadow) 0px 10px 10px;
+
+}
+
+.loginForm{
+    width: 50%;
+    justify-content: center;
+}
+
+.textfieldForm{
+    text-align: center;
+}
+
+h1{
+    font-family: var(--font);
+    color: var(--textColor);
+    text-align: center;
+    font-weight: 450;
+    text-shadow: var(--hooverEffect-op-75) 0px -1px 1px;
+    cursor: default;
+    margin: auto;
+    padding: 20px 5px;
+}
+
+
+h2{
+    font-family: var(--font);
+    color: var(--textColor);
+    text-align: center;
+    font-weight: 200;
+    cursor: default;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+p{
+    font-family: var(--font);
+    color: var(--textColor);
+    text-align: center;
+    cursor: default;
+    margin: auto;
+    padding: 5px 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content{
+        display: grid;
+
+        padding: 5px 5px;
+        margin: auto;
+
+        background: var(--dark);
+        opacity: 95%;
+        
+        border-radius: 10px;
+
+        width: 90%;
+
+        box-shadow: var(--dark) 0px 12px 28px, 
+        var(--shadow) 0px 20px 15px;
+        
+    }
+
+    h1{
+        font-family: var(--font);
+        color: var(--textColor);
+        align-items: center;
+        font-weight: 450;
+        text-shadow: var(--hooverEffect-op-75) 0px -1px 1px;
+        cursor: default;
+        padding: 20px 5px;
+    }
+
+    p{
+        font-family: var(--font);
+        color: var(--textColor);
+        text-align: center;
+        cursor: default;
+        margin: auto;
+        padding: 5px 5px;
+    }
+}
